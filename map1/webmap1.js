@@ -1,4 +1,4 @@
-let mapView = L.map('mapView').setView([30.18, -90.14], 4)
+let map = L.map('mapView').setView([30.18, -90.14], 4)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}').addTo(mapView)
 let marker = L.marker([30, -90]).addTo(mapView)
 let polygon = L.polygon([
