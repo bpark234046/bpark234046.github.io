@@ -1,4 +1,4 @@
-let New_York = L.map('webmap').setView([40.7, -74], 12)
+let New_York = L.map('webmap').setView([40.705, -74], 11)
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(New_York)
 let Empire_State_Building  = L.marker([40.748415, -73.985678]).addTo(New_York)
 let New_York_City = L.polygon([
