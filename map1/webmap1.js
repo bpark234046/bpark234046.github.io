@@ -1,5 +1,5 @@
 let Louisiana = L.map('webmap').setView([31, -92], 8)
-L.tileLayer('https://{s}.tile.openstopomap.org/{z}/{x}/{y}.png').addTo(Louisiana)
+L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(Louisiana)
 let LSU = L.marker([30.4133, -91.1800]).addTo(Louisiana)
 let Baton_Rouge = L.polygon([
 [30.511415, -91.174133],
