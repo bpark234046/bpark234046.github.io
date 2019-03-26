@@ -1,1 +1,1 @@
-let mymap = L.map('mapid').setView([32.18, -99.14], 4)
+let mymap = L.map('mapid').setView([30.18, -90.14], 4)
