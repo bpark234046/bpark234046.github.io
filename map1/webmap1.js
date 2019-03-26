@@ -1,6 +1,6 @@
 let New_York = L.map('webmap').setView([40.7, -74], 12)
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(New_York)
-let Empire_State_Building  = L.marker([30.4133, -91.1800]).addTo(New_York)
+let Empire_State_Building  = L.marker([40.748415, -73.985678]).addTo(New_York)
 let New_York_City = L.polygon([
 [40.7041815, -74.024737],
 [40.696181, -74.008645],
@@ -14,11 +14,14 @@ let New_York_City = L.polygon([
 [40.706497, -74.023876]
 ]).addTo(New_York);
 var latlngs = [
-[30.53, -91.2],
-[30.67, -91.43],
-[30.04, -91.2]
+[40.758577, -73.985075],
+[40.757527, -73.985879],
+[40.756443, -73.986645],
+[40.754467, -73.988070],
+[40.752018, -73.989865],
+[40.748065, -73.992783]
 ];
 var polyline = L.polyline(latlngs, {color: 'red'}).addTo(New_York);
 New_York_City.bindPopup('New York City');
 Empire_State_Building.bindPopup('Empire State Building');
-polyline.bindPopup('A polyline');
+polyline.bindPopup('7th Avenue');
