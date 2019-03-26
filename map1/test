@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Top 50 US Cities</title>
+
+<link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/css/esri.css">
+<script src="https://js.arcgis.com/3.27/"></script>
+
+<style>
+html, body, #viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+</style>
+
+<script>
+require([
+    "esri/map",
+    "esri/layers/FeatureLayer"
+    ],
+  function(
+    Map,
+    FeatureLayer
+  ) {
+    var map = new Map("viewDiv", {
+      basemap: "satellite",
+      ground: "world-elevation",
+      center: [-93, 40],
+      zoom: 5
+    });
+    var featureLayer = new FeatureLayer("https://services9.arcgis.com/SDQDNhpG8jikA0D1/ArcGIS/rest/services/50_US_Cities/FeatureServer/0");
+    map.addLayer(featureLayer);
+  });
+</script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
