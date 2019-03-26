@@ -1,4 +1,4 @@
-let New_York = L.map('webmap').setView([40.7, -74], 8)
+let New_York = L.map('webmap').setView([40.7, -74], 12)
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(New_York)
 let  = L.marker([30.4133, -91.1800]).addTo(New_York)
 let New_York_City = L.polygon([
