@@ -7,7 +7,7 @@ jQuery.getJSON(stateDemographicsUrl, function (data) {
     let stateColor = 'red';
     if ( popu >= '5555555' ) { stateColor = 'blue' }
     return {
-      stroke: false,
+      stroke: true,
       color: stateColor,
       weight: 1,
       fillOpacity: 0.2
