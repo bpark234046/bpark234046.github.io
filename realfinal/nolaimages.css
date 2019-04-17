@@ -4,8 +4,8 @@
 .slideshow-container {
   max-width: 1080px;
   max-height: 720px;
-  position: absolute;
-  margin-right: -50px;
+  position: relative;
+  margin: auto;
 }
 
 /* Hide the images by default */
