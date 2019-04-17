@@ -1,3 +1,10 @@
+body {
+  padding-top: 3.5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
